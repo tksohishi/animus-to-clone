@@ -9,6 +9,7 @@ const animusAbi = [
 const animusContract = new ethers.Contract(animusAddress, animusAbi, provider);
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <p>Animus Egg to Clone X</p>
   <div>
     <input placeholder="Enter an Egg ID" id="egg" type="number" />
   </div>
