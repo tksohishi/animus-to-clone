@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+.notes {
+  font-size: small;
+}
+
 #disclaimer {
   font-size: x-small;
   position: fixed;

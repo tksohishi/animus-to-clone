@@ -28,6 +28,11 @@ clone.addEventListener('change', function(event) {
     const url = "https://opensea.io/assets/ethereum/0x6c410cf0b8c113dc6a7641b431390b11d5515082/" + eggId;
     egg.textContent = "OpenSea (Animus Egg)";
     egg.setAttribute("href", url);
+    donationMessage.innerHTML = `
+    <div class="notes">
+      <p>Consider small donations if you want to support the creator's work:<br/><b>0xFabc477768d2e98508E181807E065CB275a359a7</b></p>
+    </div>
+    `
   } else {
     egg.textContent = "This Clone hasn't claimed its egg or recently claimed an egg";
   }
