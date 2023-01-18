@@ -15,13 +15,15 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
   <div>
     <a id="clone" target="_blank"></a>
-    <div id="clone-image"> </div>
+    <div id="clone-image"></div>
+    <div id="donation-message"></div>
   </div>
 `
 
 const input = document.getElementById('egg')!;
 const clone = document.getElementById('clone')!;
 const cloneImage = document.getElementById('clone-image')!;
+const donationMessage = document.getElementById('donation-message')!;
 
 input.addEventListener('change', function(event) {
   clone.textContent = "Loading...";
@@ -35,6 +37,11 @@ input.addEventListener('change', function(event) {
     clone.setAttribute("href", url);
     cloneImage.innerHTML = `
     <img src="https://clonex-assets.rtfkt.com/images/${cloneId}.png" width=200 height=200/>
+    `
+    donationMessage.innerHTML = `
+    <div class="notes">
+      <p>Consider small donations if you want to support the creator's work:<br/><b>0x60E919d2099cC496615077d0722447DeD2D5b6C6</b></p>
+    </div>
     `
   });
 });

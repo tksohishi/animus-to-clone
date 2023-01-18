@@ -30,7 +30,7 @@ clone.addEventListener('change', function(event) {
     egg.setAttribute("href", url);
     donationMessage.innerHTML = `
     <div class="notes">
-      <p>Consider small donations if you want to support the creator's work:<br/><b>0xFabc477768d2e98508E181807E065CB275a359a7</b></p>
+      <p>Consider small donations if you want to support the creator's work:<br/><b>0x60E919d2099cC496615077d0722447DeD2D5b6C6</b></p>
     </div>
     `
   } else {
